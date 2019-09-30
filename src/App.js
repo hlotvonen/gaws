@@ -17,7 +17,7 @@ class App extends Component {
 
   fetchData = () => {
     fetch(
-      "https://spreadsheets.google.com/feeds/list/1fpEKTrmYiFT5WOGOS5sAi-EWolT_Qty1DbgYn05SfXo/od6/public/values?alt=json"
+      "https://spreadsheets.google.com/feeds/list/1fpEKTrmYiFT5WOGOS5sAi-EWolT_Qty1DbgYn05SfXo/2/public/values?alt=json"
     )
       .then(response => {
         return response.json();
@@ -85,8 +85,7 @@ class App extends Component {
         7: this.filterArray(8),
         8: this.filterArray(9),
         9: this.filterArray(10),
-        10: this.filterArray(11),
-        11: this.filterArray(12)
+        10: this.filterArray(11)
       };
     }
     this.setState({
