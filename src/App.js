@@ -17,7 +17,7 @@ class App extends Component {
 
   fetchData = () => {
     fetch(
-      "https://spreadsheets.google.com/feeds/list/1Hk2VpFMLtBee2Tz9eDjBK02hmfCoEq01xeJyj0Zcq98/od6/public/values?alt=json"
+      "https://spreadsheets.google.com/feeds/list/1fpEKTrmYiFT5WOGOS5sAi-EWolT_Qty1DbgYn05SfXo/od6/public/values?alt=json"
     )
       .then(response => {
         return response.json();
@@ -98,6 +98,7 @@ class App extends Component {
     let texts = this.state.texts;
     return (
       <div>
+        <h1>Generator for Asemic Writing Systems (G.A.W.S)</h1>
         <button onClick={this.newTexts}>Generate new</button>
         <ol>
           {Object.keys(texts).map((text, index) => (
